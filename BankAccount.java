@@ -9,52 +9,33 @@ public class BankAccount {
         this.balance = 0.0;
     }
 
-    // Deposit method - adds the amount to the current balance
+    // Deposit money
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
         }
     }
 
-    // Withdrawal method - subtracts the amount from the current balance
+    // Withdraw money
     public void withdrawal(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
-        } else if (amount > balance) {
-            System.out.println("Insufficient balance.");
         }
     }
 
     // Getters and Setters
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getFirstName() { return firstName; }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    public String getLastName() { return lastName; }
+    public void setLastName(String lastName) { this.lastName = lastName; }
 
-    public String getLastName() {
-        return lastName;
-    }
+    public int getAccountID() { return accountID; }
+    public void setAccountID(int accountID) { this.accountID = accountID; }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    public double getBalance() { return balance; }
 
-    public int getAccountID() {
-        return accountID;
-    }
-
-    public void setAccountID(int accountID) {
-        this.accountID = accountID;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    // Prints all account information
+    // Show account information
     public void accountSummary() {
         System.out.println("===== Account Summary =====");
         System.out.println("Name: " + firstName + " " + lastName);
