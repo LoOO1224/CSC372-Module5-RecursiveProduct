@@ -4,7 +4,7 @@ public class BankAccount {
     private int accountID;
     private double balance;
 
-    // Constructor - initializes balance to zero
+    // Constructor - initializes balance to zeror
     public BankAccount() {
         this.balance = 0.0;
     }

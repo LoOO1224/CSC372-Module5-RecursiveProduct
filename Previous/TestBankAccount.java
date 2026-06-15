@@ -15,7 +15,7 @@ public class TestBankAccount {
         checking.setLastName("Smith");
         checking.setAccountID(2002);
         checking.deposit(1000.0);
-        checking.processWithdrawal(1200.0);   // Overdraft test
+        checking.processWithdrawal(1200.0);   
         checking.displayAccount();
     }
 }

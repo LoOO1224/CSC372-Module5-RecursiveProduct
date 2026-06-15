@@ -11,10 +11,7 @@ public class CheckingAccount extends BankAccount {
         double currentBalance = getBalance();
 
         if (amount > currentBalance) {
-            // Overdraft occurs - charge $30 fee
             System.out.println("Overdraft occurred! A $30 overdraft fee has been applied.");
-            // For simplicity, we directly adjust the balance
-            // (In real projects, it's better to use protected fields in superclass)
         } else {
             withdrawal(amount);
         }
